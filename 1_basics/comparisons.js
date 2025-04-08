@@ -13,12 +13,18 @@
 // console.log(null >= 0);
 
 
-console.log("3" === 4);
-console.log("ad" === "ad");
-console.log(true === 1);
+// console.log("3" === 4);
+// console.log("ad" === "ad");
+// console.log(true === 1);
 
-console.log(3 === 4);
-console.log(9 === 9);
+// console.log(3 === 4);
+// console.log(9 === 9);
+
+
+//********************************************************************************** */
+
+// stack(Primitive) and heap(non-primitive)
+
 
 
 
