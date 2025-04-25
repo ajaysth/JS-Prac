@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Examples</title>
+</head>
+<body>
+    <ul id="uls">
+        <li onclick="alert('Hello')">Hello</li>
+        <li id="thiss">This </li>
+        <li>is</li>
+        <li id="ajay">Ajay</li>
+        <li>The</li>
+        <li>messi</li>
+        <li id="google"s><a href="https://www.google.co.uk/">Google</a></li>
+    </ul>
+    <script>
+        // document.getElementById("thiss").onclick = () =>{
+        //     alert("this")
+        // }
+
+        // document.getElementById("ajay").addEventListener('click', ()=>{
+        //     alert("Ajay is best")
+        // })
+
+        // document.getElementById("uls").addEventListener('click', (e)=>{
+        //     console.log("I am ul");
+            
+        // },false)
+
+        // document.getElementById("ajay").addEventListener('click', (e)=>{
+        //     console.log("ajay clicked");
+            
+        // },false)
+
+        // document.getElementById("google").addEventListener( 'click',(e)=>{
+        //     e.preventDefault();
+        //     e.stopPropagation();
+        // })
+
+        document.querySelector('#uls').addEventListener(('click', (e)=>{
+            console.log(e);
+            
+        }))
+
+
+    </script>
+</body>
+</html>
