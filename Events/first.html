@@ -13,7 +13,7 @@
         <li id="ajay">Ajay</li>
         <li>The</li>
         <li>messi</li>
-        <li id="google"s><a href="https://www.google.co.uk/">Google</a></li>
+        <!-- <li id="google"s><a href="https://www.google.co.uk/">Google</a></li> -->
     </ul>
     <script>
         // document.getElementById("thiss").onclick = () =>{
@@ -39,10 +39,12 @@
         //     e.stopPropagation();
         // })
 
-        document.querySelector('#uls').addEventListener(('click', (e)=>{
-            console.log(e);
-            
-        }))
+        document.querySelector('#uls').addEventListener('click', (e)=>{
+            console.log(e.target.parentNode);
+            let removeIt = e.target;
+            // removeIt.remove();
+            removeIt.parentNode.removeChild(removeIt);
+        })
 
 
     </script>
