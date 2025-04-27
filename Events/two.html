@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1>Async Examples</h1>
+    <button id="stop">Cancel</button>
+    <script>
+        const name = function (){
+            console.log("I am ajay");  
+        }
+        setTimeout(name,2000);
+
+        const changeText = function (){
+            document.querySelector('h1').innerHTML ="This is Ajay haii";
+        }
+
+        const changeMe = setTimeout(changeText,3000);
+
+        document.querySelector('#stop').addEventListener('click',()=>{
+            clearTimeout(changeMe);
+            console.log("I stopped");
+            
+        })
+    </script>
+    
+</body>
+
+</html>
