@@ -7,24 +7,19 @@
 </head>
 <body>
     <h1>Async Examples</h1>
-    <button id="stop">Cancel</button>
+    <button id="change">Change</button>
     <script>
-        const name = function (){
-            console.log("I am ajay");  
+        const name = function(){
+            console.log("I am ajay");
         }
-        setTimeout(name,2000);
+       const changeMe =  setTimeout(name,2000)
 
-        const changeText = function (){
+        const changeText = function(){
             document.querySelector('h1').innerHTML ="This is Ajay haii";
+            clearTimeout(changeMe)
         }
 
-        const changeMe = setTimeout(changeText,3000);
-
-        document.querySelector('#stop').addEventListener('click',()=>{
-            clearTimeout(changeMe);
-            console.log("I stopped");
-            
-        })
+        document.querySelector('#change').addEventListener('click',changeText);
     </script>
     
 </body>
